@@ -1,0 +1,13 @@
+2023-07-15T15:29:38+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\style-plus\wp-includes\Requests\src\Transport\Curl.php on line 534
+
+2023-07-15T19:07:16+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string + int in C:\xampp\htdocs\style-plus\wp-content\plugins\woocommerce\includes\class-wc-ajax.php:2784
+Stack trace:
+#0 C:\xampp\htdocs\style-plus\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(2726): WC_AJAX::variation_bulk_adjust_price(Array, 'regular_price', '+', '1290')
+#1 C:\xampp\htdocs\style-plus\wp-content\plugins\woocommerce\includes\class-wc-ajax.php(2876): WC_AJAX::variation_bulk_action_variable_regular_price_increase(Array, Array)
+#2 C:\xampp\htdocs\style-plus\wp-includes\class-wp-hook.php(308): WC_AJAX::bulk_edit_variations('')
+#3 C:\xampp\htdocs\style-plus\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\style-plus\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\style-plus\wp-admin\admin-ajax.php(188): do_action('wp_ajax_woocomm...')
+#6 {main}
+  thrown in C:\xampp\htdocs\style-plus\wp-content\plugins\woocommerce\includes\class-wc-ajax.php on line 2784
+
